@@ -1,11 +1,11 @@
 xyear = int(input("Enter a year: "))
 
 def chkLeapYr(xyear):
+    isLeap = False
     if (xyear%4==0 and xyear%100!=0) or (xyear%400==0):
-        isLeap = "true"
-        print(isLeap)
+        isLeap = True
     else:
-        isLeap = "false"
-        print(isLeap)
+        isLeap = False
+    return isLeap
 
-chkLeapYr(xyear)
+print(chkLeapYr(xyear))
